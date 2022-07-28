@@ -1,0 +1,105 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.filters__btn {
+    padding: 6px 22px 6px 22px;
+    height: 38px;
+    background: $button-portfolio;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: $text-accent;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background: $button-hero;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $accent-color;
+    }
+}
+.filters__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    list-style: none;
+}
+.filters__buttons {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.project__animation {
+    position: relative;
+    overflow: hidden;
+}
+.project__item {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding: 20px auto 4px 24px;
+}
+.project__overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.project__items {
+    margin-right: 30px;
+    width: 370px;
+    height: 404px;
+    background: $accent-color;
+    border-left: 1px solid $border-cards;
+    border-right: 1px solid $border-cards;
+    border-bottom: 1px solid $border-cards;
+    &:hover, &:focus {
+        border: 1px solid $border-cards;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
+    &:nth-child(-n+6) {
+        margin-bottom: 30px;
+    }
+}
+.project__items:hover .project__overlay {
+    transform: translateY(0);
+}
+.project__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: $text-accent;
+}
+.project__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $text-title;
+}
