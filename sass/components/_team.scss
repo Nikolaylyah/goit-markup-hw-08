@@ -1,7 +1,13 @@
 .team {
     background: $button-portfolio;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }    
 }
 .team__container {
     display: flex;
@@ -12,23 +18,56 @@
     margin-bottom: 50px;
     color: $text-accent;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
+    
 }
 .team__cards {
-    text-align: center;
-    width: 270px;
-    height: 428px;
+    text-align: center;    
     background: $accent-color;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
     }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        
+        width: calc((100% - 30px)/2);
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }    
+    }
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
 }
-.team__list {
-    display: flex;
+.team__list {   
     list-style: none;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        display: flex; 
+        
+        flex-wrap: wrap;
+        
+        
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 .team__card {
     padding-top: 30px;

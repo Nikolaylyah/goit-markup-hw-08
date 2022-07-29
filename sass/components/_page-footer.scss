@@ -11,14 +11,26 @@ footer {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 .footer__studio {
     color: $accent-color;
 }
 .footer__list {
     list-style: none;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .footer__links {
     &:not(:last-child) {
@@ -52,7 +64,16 @@ footer {
     display: flex;
 }
 .footer__icons {
-    margin-right: 94px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 94px;
+    }
+    
 }
 .footer__icon-wrap {
     &:not(:last-child) {
@@ -65,11 +86,25 @@ footer {
     }   
 }
 .footer__all {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     display: flex;
     align-items: baseline;
 }
 .footer__container {
-    margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+    
 }
 .footer__icon-title {
     font-weight: 700;
@@ -93,9 +128,21 @@ footer {
 .footer__form-label {
     display: flex;
     flex-direction: column;
-    padding-right: 12px;
+    
+    
+    @media screen and (max-width: 767px) {
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-right: 12px;
+    }
 }
 .footer__form {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     display: flex;
     align-items: flex-end;
 }
