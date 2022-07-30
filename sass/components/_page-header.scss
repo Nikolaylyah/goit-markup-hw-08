@@ -1,7 +1,5 @@
 .navigation {
-    @media screen and (min-width: 768px) {
-        border-bottom: 1px solid $line;        
-    }       
+    border-bottom: 1px solid $line;          
 }
 .navigation__container {
     @media screen and (min-width: 768px) {
@@ -73,7 +71,7 @@
         top: 0;
         transform: translateY(100%);
         left: 0;
-        padding: 48px 40px;
+        padding-top: 48px;
         width: 100%;
         height: 100%;
         background-color: $accent-color;
