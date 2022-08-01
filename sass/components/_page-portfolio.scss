@@ -10,13 +10,18 @@
 }
 .filters__list {
     display: flex;    
-    margin-bottom: 50px;
     list-style: none;
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 .filters__buttons {
@@ -67,8 +72,7 @@
     border-left: 1px solid $border-cards;
     border-right: 1px solid $border-cards;
     border-bottom: 1px solid $border-cards;
-    &:hover, &:focus {
-        border: 1px solid $border-cards;
+    &:hover, &:focus {        
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
