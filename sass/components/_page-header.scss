@@ -6,8 +6,7 @@
         min-width: 320px;        
     }
     @media screen and (min-width: 768px) {
-        display: flex;
-        
+        display: flex;        
     }
     @media screen and (min-width: 1200px) {
         justify-content: space-between;
@@ -16,8 +15,7 @@
 .navigation__container .navigation__wrap {
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 80px;   
+    justify-content: space-between;    
 }
 .navigation__wrap {
     @media screen and (min-width: 768px) {
@@ -25,14 +23,22 @@
         align-items: center;
     }    
 }
-.navigation__web {
-    padding: 24px 0;
+.navigation__web {    
     color: $button-hero;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;     
+    text-decoration: none;
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 26px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 24px 0;
+    }
 }
 .navigation__studio {
     color: $text-accent;
