@@ -508,7 +508,7 @@ ul, li {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: calc(100% - 30px);
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -529,6 +529,9 @@ ul, li {
   flex-direction: column;
   padding: 40px;
   align-items: center;
+}
+.form::after, .form::before {
+  box-sizing: border-box;
 }
 
 .form__title {
@@ -951,6 +954,12 @@ ul, li {
   .team__cards:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.team__img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team__list {
@@ -1531,6 +1540,12 @@ footer {
 .project__animation {
   position: relative;
   overflow: hidden;
+}
+
+.project__img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .project__overlay {

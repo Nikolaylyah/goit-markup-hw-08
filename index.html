@@ -180,21 +180,21 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section>        
         <section class="team">
             <div class="team__container container ">
                 <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__cards">
-                    <img
-                    srcset="./images/igor-demyanenko-270.jpg 270w, 
-                    ./images/igor-demyanenko@2x-270.jpg 270w,
-                    ./images/igor-demyanenko-354.jpg 354w,
-                    ./images/igor-demyanenko@2x-354.jpg 354w,
-                    ./images/igor-demyanenko-450.jpg 450w,
-                    ./images/igor-demyanenko@2x-450.jpg 450w"
-                    sizes="(min-width: 320px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                    src="./images/igor-demyanenko-270.jpg" alt="Игорь Демьяненко" />
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                        srcset="./images/igor-demyanenko-270.jpg 1x, ./images/igor-demyanenko@2x-270.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/igor-demyanenko-354.jpg 1x, ./images/igor-demyanenko@2x-354.jpg 2x">
+                        <source media="(max-width: 767px)"
+                        srcset="./images/igor-demyanenko-450.jpg 1x, ./images/igor-demyanenko@2x-450.jpg 2x">
+                        <img class="team__img" src="./images/igor-demyanenko-270.jpg" width="270" height="260" alt="Игорь Демьяненко">
+                    </picture>
                     <div class="team__card">
                         <h3 class="team__cards-title">Игорь Демьяненко</h3>
                         <p class="team__cards-text">Product Designer</p>
@@ -234,7 +234,15 @@
                     
                 </li>
                 <li class="team__cards">
-                    <img src="./images/olga-repina.jpg" width="100%" alt="Ольга Репина">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                        srcset="./images/olga-repina-270.jpg 1x, ./images/olga-repina@2x-270.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/olga-repina-354.jpg 1x, ./images/olga-repina@2x-354.jpg 2x">
+                        <source media="(max-width: 767px)"
+                        srcset="./images/olga-repina-450.jpg 1x, ./images/olga-repina@2x-450.jpg 2x">
+                        <img class="team__img" src="./images/olga-repina-270.jpg" width="270" height="260" alt="Игорь Демьяненко">
+                    </picture>
                     <div class="team__card">
                         <h3 class="team__cards-title">Ольга Репина</h3>
                         <p class="team__cards-text">Frontend Developer</p>
@@ -273,7 +281,15 @@
                     </div>
                 </li>
                 <li class="team__cards">
-                    <img src="./images/nikolai-tarasov.jpg" width="100%" alt="Николай Тарасов">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                        srcset="./images/nikolai-tarasov-270.jpg 1x, ./images/nikolai-tarasov@2x-270.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/nikolai-tarasov-354.jpg 1x, ./images/nikolai-tarasov@2x-354.jpg 2x">
+                        <source media="(max-width: 767px)"
+                        srcset="./images/nikolai-tarasov-450.jpg 1x, ./images/nikolai-tarasov@2x-450.jpg 2x">
+                        <img class="team__img" src="./images/nikolai-tarasov-270.jpg" width="270" height="260" alt="Игорь Демьяненко">
+                    </picture>
                     <div class="team__card">
                         <h3 class="team__cards-title">Николай Тарасов</h3>
                         <p class="team__cards-text">Marketing</p>
@@ -312,7 +328,15 @@
                     </div>
                 </li>
                 <li class="team__cards">
-                    <img src="./images/mikhail-ermakov.jpg" width="100%" alt="Михаил Ермаков">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                        srcset="./images/mikhail-ermakov-270.jpg 1x, ./images/mikhail-ermakov@2x-270.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/mikhail-ermakov-354.jpg 1x, ./images/mikhail-ermakov@2x-354.jpg 2x">
+                        <source media="(max-width: 767px)"
+                        srcset="./images/mikhail-ermakov-450.jpg 1x, ./images/mikhail-ermakov@2x-450.jpg 2x">
+                        <img class="team__img" src="./images/mikhail-ermakov-270.jpg" width="270" height="260" alt="Игорь Демьяненко">
+                    </picture>
                     <div class="team__card">
                         <h3 class="team__cards-title">Михаил Ермаков</h3>
                         <p class="team__cards-text">UI Designer</p>

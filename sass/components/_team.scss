@@ -50,9 +50,13 @@
         &:not(:last-child) {
             margin-right: 30px;
         }
-    }
-    
+    }    
 }
+.team__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 .team__list {   
     list-style: none;
     @media screen and (max-width: 767px) {

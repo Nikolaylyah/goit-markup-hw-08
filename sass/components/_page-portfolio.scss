@@ -102,6 +102,11 @@
     position: relative;
     overflow: hidden;
 }
+.project__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 .project__overlay {
     display: flex;
     align-items: center;
